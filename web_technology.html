@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Web Technology
+        </title>
+        <style>
+            h1 {
+                margin-bottom: 10px;
+            }
+            h2 {
+                border-bottom: 2px solid #333;
+                padding-bottom: 5px;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 10px;
+                background: #f9fafb;
+            }
+
+            .nav-menu{
+                font-size: smaller;
+                display: flex;
+                list-style: none;
+                gap: 10px;
+                padding: 0;
+                flex-wrap: wrap;
+            }
+
+            .nav-menu a{
+                text-decoration: none;
+                padding: 8px 16px;
+                color: white;
+                background-color: #777;
+                border-radius: 6px;        
+            }
+
+            .nav-menu a:hover{
+                background-color: #888;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Web Technology</h1>
+
+        <p>
+            Web Technology refers to the tools, languages, and protocols used to create,
+            deliver, and interact with content on the World Wide Web.
+            It covers everything from how web pages are built (HTML, CSS, JavaScript)
+            to how data moves between clients and servers (HTTP), how dynamic content is generated,
+            and how web applications are structured and secured.
+        </p>
+
+        <ul class="nav-menu">
+            <li>
+                <a href="#Client-Server">Client-Server</a>
+            </li>
+            <li>
+                <a href="#Components">Components of Web Application</a>
+            </li>
+            <li>
+                <a href="#Web-Content">Types of Web Content</a>
+            </li>
+            <li>
+                <a href="#HTTP">HTTP and HTTP Requests</a>
+            </li>
+            <li>
+                <a href="#Dynamic">Dynamic Web Pages</a>
+            </li>
+            <li>
+                <a href="#Application-Server">Application Servers</a>
+            </li>
+            <li>
+                <a href="#Security">Web Security</a>
+            </li>
+        </ul>
+
+        <h2 id="Client-Server">
+            Client-Server
+        </h2>
+        <p>
+            The Client-Server Model is a network architecture where clients send requests for resources or services,
+            and servers process these requests and return the required responses. A client is a device or program that
+            requests data or services, such as a web browser, while a server is a system that stores resources,
+            manages data, and responds to client requests.This request-response cycle forms the foundation of how
+            the web and most networked applications work.
+        </p>
+        <h2 id="Components">
+            Components of Web Application
+        </h2>
+        <p>
+            A Web Application is typically structured into three main components.</p>
+            <ul>
+            <li>
+            <b>The View Layer</b> (also called the presentation layer) is what the user interacts with directly 
+            — built using HTML, CSS, and JavaScript — and is responsible only for displaying information, not processing logic.
+            </li>
+            <li>
+             <b>The Business Layer</b> (also called application or domain logic) accepts requests from the view layer, processes them, and determines how and where data should be accessed. 
+            </li>
+            <li>
+             <b>The Data Access Layer</b> (also called the persistence layer) handles all communication with the database — storing, retrieving, and managing data — and stays closely connected to the business layer so data retrieval is optimized. Together, these three layers separate concerns, making the application easier to build, debug, and maintain.
+            </li>
+            </ul>
+
+        <h2 id="Web-Content">
+            Types of Web Content
+        </h2>
+        <p>
+         Web content can be delivered through multiple media formats, often combined together to communicate information effectively. The five core forms are
+        </p>
+        <ul>
+                <li>
+                    <b>Text</b> which provides written information and context
+                </li>
+                <li>
+                    <b>Images</b> static visuals like photographs or illustrations
+                </li>
+                <li>
+                <b>Audio</b> sound-based content such as music, podcasts, or voiceovers
+                </li>
+                <li>
+                    <b>Video</b> moving visuals combined with sound
+                </li>
+                <li>
+                    <b>Animation</b> sequences of still images played in order to create the appearance of motion.
+                </li>
+            </ul>
+        <p>Modern websites typically combine several of these formats together to make content more engaging, accessible, and easier to understand.
+        </p>
+
+    
+        <h2 id="HTTP">HTTP and HTTP Requests</h2>
+        <p>
+            HTTP (Hypertext Transfer Protocol) is the foundational protocol used to load webpages and transfer data across the internet.
+                It defines a set of rules that browsers and servers follow so they can understand each other's messages. HTTP works on a request-response model:
+            an HTTP Request is the message a client sends when it wants to retrieve or interact with a resource, such as a webpage, image, or file.
+            It contains a method (like GET or POST) describing the action requested, the URL of the resource, and headers with extra details like browser
+                type or accepted formats. The server processes this request and returns an HTTP Response, which includes a status code (like 200 for success or 404
+            for not found) and the actual content requested. This entire back-and-forth is called the HTTP communication cycle, and it happens every time a browser
+            loads a page, image, or script.
+        </p>
+    
+
+    
+        <h2 id="Dynamic">
+            Dynamic Web Pages
+        </h2>
+        <p>
+            A dynamic web page is a page that displays different content depending on the user, time, or context — unlike a static page, which shows the exact same content
+                to every visitor. Dynamic pages are built by pulling data from a database and assembling the final page in real time when a user requests it. There are two types:
+                client-side scripting,
+                where content changes in the browser using JavaScript without needing a new server request (e.g., a dropdown menu updating instantly);
+                and server-side scripting, where the server generates the page content before sending it to the browser (e.g., a login page showing your username after you sign in).
+                Common examples include social media feeds, e-commerce product pages, and personalized homepages like YouTube.
+        </p>
+    
+
+    
+        <h2 id="Application-Server">
+            Application Servers
+        </h2>
+        <p>
+            An Application Server is a software platform that provides the environment needed to run and manage web-based applications.
+            It acts as a middle layer between the user interface (frontend) and backend resources like databases, processing business 
+            logic and handling data exchange between the client and server. Its main purpose is to execute the core logic of an application,
+            manage database connections, and send back the processed result to be displayed to the user. Major services provided by application
+            servers include database integration, transaction management, session management, load balancing, and built-in security features like authentication 
+            and encryption.
+        </p>
+    
+
+    
+        <h2 id="Security">
+            Web Security
+        </h2>
+        <p>
+            Web Security refers to the measures and practices used to protect websites, web applications, and their users from cyber threats and unauthorized access.
+            It is important because websites regularly handle sensitive data — passwords, personal details, payment information — and a breach can lead to data theft
+            , financial loss, and loss of user trust. Basic security measures include using HTTPS to encrypt data in transit, input validation to prevent malicious data
+            from being submitted through forms, authentication and access control (like multi-factor authentication) to verify user identity, 
+            and regular vulnerability testing to catch and fix weaknesses before attackers exploit them.
+        </p>
+        
+    </body>
+
+</html>
