@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Application</title>
+
+        <style>
+            
+            body {
+                margin: 0%;
+                padding: 0%;
+                font-family: Arial, Helvetica, sans-serif;
+                max-width: 800px;
+                border: 2px solid black;
+            }
+
+
+            h2{
+                font-size: small;
+                padding-left: 20px;
+            }
+
+            p{
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .heading {
+                font-size: 20px;
+                text-align: center;
+                color: white;
+                background-color: rgb(9, 9, 113);
+                padding: 10px;
+            }
+
+            .form-field p{
+                display: inline-block;
+                width: 150px;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 20px;
+            }
+
+            select {
+                width: 200px;
+                margin: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+
+            button{
+                background-color: rgb(9, 9, 113);
+                padding: 10px;
+                color: white;
+                border-radius: 5px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+            }
+
+            form{
+                padding-bottom: 20px;
+            }
+            
+            .checkbox input{
+                margin-left: 20px;
+            }
+
+            .checkbox p{
+                padding-left: 2px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="heading">
+            <p>Job Application</p>            
+        </div>
+
+        <div class="form-field">
+            <form>
+            <h2>Personal Information</h2>
+            <hr>
+
+                <p>Name</p>
+             
+                <input type="text" name="name">
+                
+                <p>Age</p>
+              
+                <input type="number" name="age">
+               
+                <br>
+             
+                <p>Gender</p>
+
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="others"> Others
+                    
+                <br>
+        
+                <p>Password</p>
+                <input type="password" name="password"> 
+                
+
+                <p>Retype Password</p>
+                <input type="password" name="retyped_password">
+                <hr>
+            
+            <h2>Security Question</h2>
+            <hr>
+
+                <select name="security_question">
+                    <option value="pet">First pet's name</option>
+                    <option value="city">City where you were born</option>
+                    <option value="school">Name of your first school</option>
+                </select>
+                <input type="text" name="security_answer">
+                <hr>
+
+            <h2>Contact Information</h2>
+            <hr>
+
+                <p>Email </p>
+                <input type="email" name="email">
+                
+                <p>Home Phone no</p>
+                <input type="tel" name="phone_number">
+                
+                <p>Office Phone no </p> 
+                <input type="tel" name="phone_number_office">
+                <hr>
+            
+            
+            <h2>Languages Known</h2>
+            <hr>
+                <div class="checkbox">
+                <input type="checkbox" name="Languages_malayalam" value="yes"> 
+                <p>Malayalam</p>
+                <input type="checkbox" name="Languages_english" value="yes"> 
+                <p>English</p>
+                <input type="checkbox" name="Languages_hindi" value="yes"> 
+                <p>Hindi</p>
+                <hr>
+                </div>
+
+            
+            <p>Upload CV</p> 
+            <input type="file" name="cv" accept=".pdf,.doc">
+
+            <hr>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>    
+        
+            </form>
+        </div>
+
+    </body>
+
+</html>
