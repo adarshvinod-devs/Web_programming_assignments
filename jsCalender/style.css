@@ -1,0 +1,52 @@
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+}
+
+th , td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+th{
+    color: white;
+    background-color: red;
+}
+td:first-child{
+    color: red;
+}
+
+.month, .year{
+    display: block;
+    margin-top: 20px;
+}
+
+.button {
+    width: 190px;
+    display: flex;
+    justify-content:space-between;
+}
+
+button {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+#year-label{
+    padding-right: 14px;
+}
+
+input {
+    width : 100px;
+}
+
+body{
+    padding-left: 2%;
+}
