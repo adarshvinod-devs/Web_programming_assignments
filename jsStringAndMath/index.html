@@ -6,6 +6,15 @@
     <title>JavaScript</title>
     <style>
         #result, #strResult { white-space: pre-line; }
+        button {
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+        }
+        body{
+            padding-left: 2%;
+            padding-right: 2%;
+        }
     </style>
 </head>
 <body>
@@ -15,6 +24,7 @@
     <label for="num2">Number 2</label>
     <input type="number" id="num2" placeholder="Enter second number">
     <br><br>
+    <div class="buttons">
     <button onclick="power()">Power</button>
     <button onclick="squareRoot()">Square Root</button>
     <button onclick="round()">Round</button>
@@ -24,6 +34,7 @@
     <button onclick="sincos()">Sine/Cosine</button>
     <button onclick="minmax()">Minimum and Maximum</button>
     <button onclick="random()">Random</button>
+    </div>
     <p id="result"></p>
 
     <h2>Strings</h2>
@@ -35,6 +46,7 @@
     <label for="replacement">Replacement</label>
     <input type="text" id="replacement" placeholder="Replacement word">
     <br><br>
+    <div class="buttons">
     <label for="box1">Start</label>
     <input type="number" id="box1">
     <label for="box2">End</label>
@@ -51,6 +63,7 @@
     <button onclick="replaceWord()">Replace</button>
     <button onclick="upper()">Upper Case</button>
     <button onclick="lower()">Lower Case</button>
+    </div>
     <p id="strResult"></p>
 
     <script src="script.js"></script>
