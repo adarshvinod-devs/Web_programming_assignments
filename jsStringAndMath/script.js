@@ -54,7 +54,7 @@ function minmax(){
 function random(){
     const num1 = document.getElementById("num1").value;
     const num2 = document.getElementById("num2").value;
-    document.getElementById("result").textContent = `${Math.floor(Math.random() * Math.abs(num1 - num2 + 1)) + Math.min(num1,num2)}`
+    document.getElementById("result").textContent = `Random: ${Math.floor(Math.random() * (Math.abs(num1 - num2) + 1)) + Math.min(num1, num2)}`
 }
 
 //Strings
@@ -94,4 +94,26 @@ function substring(){
     const start = document.getElementById("box1").value;
     const end = document.getElementById("box2").value;
     document.getElementById("strResult").textContent = s.substring(start,end)
+}
+
+function substr(){
+    const s = getString();
+    const start = document.getElementById("box1").value;
+    const length = document.getElementById("box3").value;
+    document.getElementById("strResult").textContent = s.substr(start, length)
+}
+
+function replaceWord(){
+    const s = getString();
+    const w = document.getElementById("operations").value;
+    const r = document.getElementById("replacement").value;
+    document.getElementById("strResult").textContent = s.replaceAll(w, r)
+}
+
+function upper(){
+    document.getElementById("strResult").textContent = getString().toUpperCase()
+}
+
+function lower(){
+    document.getElementById("strResult").textContent = getString().toLowerCase()
 }
