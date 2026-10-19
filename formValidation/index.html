@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Validation</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: bold;
+                
+            }
+            #form-div{
+                padding-top: 5%;
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                
+            }
+
+            .inner-div{
+                border: 1px solid black;
+                padding: 20px;
+            }
+
+            .input-div{
+                width: 600px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                
+            }
+
+            button{
+                width :45%;
+                height: 40px;
+                background-color: white;
+                border: 1px solid black;
+                font-size: large;
+                font-weight: bold;    
+            }
+
+            input{
+                font-size: large;
+                width : 50%;
+                padding: 10px;
+            }
+
+            #submit{
+                background-color: black;
+                color: white;
+            }
+
+            .button-div{
+                width: 600px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div id="form-div">
+        <form method="POST">
+            <div class="inner-div">
+            <div class="input-div">
+            <label for="name">Enter name</label>
+            <input id="name" name="name">
+            </div>
+            <div class="input-div">
+            <label for="email">Enter email</label>
+            <input type="email" id="email" name="email">
+            </div>
+            <div class="input-div">
+            <label for="mobile-number">Enter ph no</label>
+            <input type="number" id="mobile-number" name="mobile-number">
+            </div>
+            <div class="input-div">
+            <label for="user-name">Enter user name</label>
+            <input type="user-name" id="user-name" name="password">
+            </div>
+            <div class="input-div">
+            <label for="password">Enter password</label>
+            <input type="password" id="password" name="password">
+            </div>
+            <div class="button-div">
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </div>
+            </div>
+        
+        </form>
+        </div>
+    </body>
+</html>
